@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Water Jug Challenge</title>
+  <link rel="stylesheet" href="style.css" />
+  
+</head>
+<body>
+  <div class="container">
+    <h1>Water Jug Challenge</h1>
+
+    <div class="form">
+      <label for="x">Jug X (gallons):</label>
+      <input type="number" id="x" min="1" required />
+
+      <label for="y">Jug Y (gallons):</label>
+      <input type="number" id="y" min="1" required />
+
+        <label for="z">Target amount (gallons):</label>
+        <input type="number" id="z" min="1" required />
+        <label for="viewMode">View mode:</label>
+        <select id="viewMode">
+            <option value="visual">Visual</option>
+            <option value="table">Table</option>
+        </select>
+
+      <div class="button-group">
+        <button class="btn-grad" id="solveBtn">Solve</button>
+        <button class="btn-grad" id="resetBtn">Reset</button>
+      </div>
+
+    </div>
+
+    <div id="result"></div>
+    <div id="visualResult" class="visual-container hidden"></div>
+    <div id="tableResult" class="table-container hidden"></div>
+    <div id="finalMessage"></div>
+
+    <div class="step-controls">
+        <button class="btn-grad hidden" id="nextStepBtn" disabled>Next Step</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

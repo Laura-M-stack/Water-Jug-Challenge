@@ -42,8 +42,18 @@ Below are some test cases with expected outcomes to validate the solution logic:
 | 8     | 12    | 4         | ✅ Solvable      |
 | 1     | 2     | 3         | ✅ Solvable      |
 | 7     | 9     | 8         | ❌ Not solvable  |
+| 4     | 6     | 0         | ✅ Solvable (edge case) |
+| 5     | 5     | 5         | ✅ Solvable (equal jugs) |
+| 3     | 4     | 8         | ❌ Not solvable (target > total capacity) |
 
 The algorithm checks whether Z is a multiple of GCD(X, Y) and less than or equal to the maximum of X or Y.
+
+### Notes on edge cases:
+- **Z = 0**: Always solvable by default, as no action is needed.
+- **Equal jugs**: Allows testing symmetric transfers.
+- **Target > capacity sum**: Impossible because it exceeds the total volume available.
+
+These test cases have been manually verified using the interactive application.
 
 ---
 

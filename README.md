@@ -31,6 +31,22 @@ This project is a solution to the classic **Water Jug Problem**, built with **HT
 
 ---
 
+## Test Cases for Validation
+
+Below are some test cases with expected outcomes to validate the solution logic:
+
+| Jug X | Jug Y | Target Z | Expected Result |
+|-------|-------|-----------|-----------------|
+| 3     | 5     | 4         | ✅ Solvable      |
+| 2     | 6     | 5         | ❌ Not solvable  |
+| 8     | 12    | 4         | ✅ Solvable      |
+| 1     | 2     | 3         | ✅ Solvable      |
+| 7     | 9     | 8         | ❌ Not solvable  |
+
+The algorithm checks whether Z is a multiple of GCD(X, Y) and less than or equal to the maximum of X or Y.
+
+---
+
 ## Algorithm Overview
 
 The algorithm uses the mathematical concept of the **Greatest Common Divisor (GCD)**. A solution is only possible if:
